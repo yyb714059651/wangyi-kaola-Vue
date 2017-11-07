@@ -1,0 +1,281 @@
+@charset "utf-8";
+/* CSS Document */
+*{box-sizing: border-box;user-select: none;}
+body{font-family: 'Work Sans', sans-serif;}
+a{transition: 0.5s all ease;text-decoration: none;}
+img {border: 0;max-width: 100%;vertical-align:middle;}
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select,td{margin:0;padding:0;}
+body{font:12px  "宋体"; word-wrap:break-word;}
+a,u,s,del{color:#666;text-decoration:none;}
+fieldset ,a img,.bor0 {border:0;}
+i,em,b,strong{font-style:normal;font-weight:100;}
+li{list-style:none}
+table{border-collapse:collapse;}/*细线边框*/
+
+.ind2{text-indent:2em}
+/*溢出隐藏出现省略号*/
+.over{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+
+/*让图片垂直对齐方式*/
+.valign{text-align:center;}
+.valign:after{content:"";display:inline-block;width:0;height:100%;
+    vertical-align:middle;}/*给valign添加个子元素对齐图片*/
+.valign img{vertical-align:middle;}
+
+/*万能清除浮动法*/
+.clear{zoom:1;}
+.clear:after{content:"";clear:both;display:block;}
+
+/*header*/
+.detail{
+    position: fixed;
+    top:0;
+    z-index: 100;
+    width:100%;
+    height:1.1rem;
+    margin:0 auto;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+    background: rgba(255,255,255,0.5);
+}
+.detail>a{
+    text-align: center;
+    width: 0.8rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    display: block;
+    margin: 0 0.2rem;
+    background: white;
+    border-radius: 100%;
+    opacity: 0.5;
+}
+.head-box{
+    padding:0 10%;
+    display: flex;
+    flex:1;
+    /*background: #e5e5e5;*/
+    height:100%;
+    border-radius: 0.1rem;
+    overflow: hidden;
+
+}
+.head-box div{
+    text-align: center;
+    flex:1;
+}
+.head-box div a{
+    display: inline-block;
+    height: 100%;
+    padding:0;
+    line-height:1rem;
+}
+.head-box div a.active{
+    color:#000;
+    border-bottom:2px solid red;
+}
+/*.head-box div a:hover{
+    border-bottom:2px solid red;
+}*/
+
+/*text*/
+#text-box{
+    width:100%;
+    margin: 0 auto;
+}
+.text-01{
+    font-size: 0.3rem;
+    background: #f7efe2;
+    padding: 0.2rem 0.2rem;
+}
+.text-02{
+    padding: 0.45rem 0.2rem;
+}
+.text-02 span{
+    font-size: 0.5rem;
+    font-weight: bold;
+    color: red;
+}
+.text-02 i{
+    padding: 0.1rem;
+    font-size: 0.2rem;
+    color: white;
+    background: red;
+}
+.text-03{
+    display: flex;
+    font-size: 0.2rem;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 5%;
+    padding: 0.2rem 0.2rem;
+    background: #f7efe2;
+}
+.text-04{
+    padding: 0.2rem 0.2rem;
+}
+.text-04 .text-04-i1{
+    display:inline-block;
+    font-size: 0.1rem;
+    color: red;
+    border: 1px solid red;
+}
+.text-04 .text-04-i2{
+    font-size: 0.3rem;
+}
+.text-05 {
+    padding: 0.2rem 0.2rem;
+    font-size: 0.2rem;
+}
+.text-05 p{
+    line-height: 0.5rem;
+}
+.text-06 {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.2rem 0.2rem;
+    font-size: 0.1rem;
+    width: 90%;
+    margin: 0 5%;
+    background: #f7efe2;
+}
+.text-06 i{
+    padding: 0.1rem  0.7rem 0.1rem 0;
+}
+
+.text-07{
+    border-top:1px solid #ccc ;
+    display: flex;
+    justify-content:space-between;
+    padding: 0.1rem 0.2rem;
+    width: 90%;
+    margin: 0 5%;
+    line-height: 0.5rem;
+    background: #f7efe2;
+}
+.text-07 i{
+    padding: 0.2rem 0;
+    font-size: 0.05rem;
+}
+.text-08{
+    display: flex;
+    padding: 0.2rem 0.2rem 0.2rem 0.1rem;
+    border-bottom: 1px solid #ccc;
+}
+.text-08 i{
+    padding: 0 0.1rem;
+    align-self: center;
+}
+.text-08 p{
+    line-height: 0.5rem;
+    font-size: 0.1rem;
+}
+.text-09{
+     display: flex;
+     justify-content: space-between;
+     padding: .3rem .2rem;
+     font-size: 0.1rem;
+     margin: 0 0 0 .2rem;
+     border-bottom: 1px solid #ccc;
+ }
+.text-09 span{
+    color: red;
+    flex:1;
+}
+.text-09 strong{
+    color: #000;
+    flex:1;
+}
+.text-09 p{
+    line-height: 0.5rem;
+}
+.text-09 .text-09-i1{
+    margin-right: 0.5rem;
+}
+.text-09 .text-09-i2{
+    margin-left: 0.3rem;
+    align-self: center;
+}
+.text-10{
+    display: flex;
+    justify-content: space-between;
+    padding: .3rem .2rem;
+    font-size: 0.1rem;
+    margin: 0 0 0 .2rem;
+}
+.text-10 strong{
+    color: #000;
+    flex:1;
+}
+.text-10 p{
+    line-height: 0.5rem;
+}
+.text-10 .text-10-i1{
+    margin-right: 0.5rem;
+}
+.text-10 .text-10-i2{
+    margin-left: 0.3rem;
+    align-self: center;
+}
+.text-11{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: .3rem .2rem;
+    font-size: 0.1rem;
+    border-bottom: 8px solid #ccc;
+    border-top: 8px solid #ccc;
+}
+.text-11-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem 0;
+}
+.text-11-img{
+    width:90%;
+    background: #f7efe2;
+    padding: 0.2rem 0.3rem;
+}
+.text-11-img p{
+    padding: 0.2rem 0;
+}
+.footdetail{
+  width: 100%;
+  height: 1.2rem;
+  position: fixed;
+  display: flex;
+  bottom:0;
+  left: 0;
+  z-index: 20;
+  text-align: center;
+}
+.footerbox01{
+  font-size: 0.3rem;
+  background: white;
+  border: 1px solid gray;
+  line-height:0.5rem;
+  width: 15%;
+}
+.footerbox02{
+  font-size: 0.3rem;
+  background: white;
+  border: 1px solid gray;
+  line-height:0.5rem;
+  width: 15%;
+}
+.footerbox03{
+  font-size: 0.4rem;
+  color: white;
+  background: #000;
+  line-height:1.055rem;
+  width:35%;
+}
+.footerbox04{
+  font-size: 0.4rem;
+  color: white;
+  background: red;
+  line-height:1.055rem;
+  width:35%;
+}
